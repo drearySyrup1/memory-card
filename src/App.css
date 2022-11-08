@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+
+.change-theme-button:hover {
+  background-color: rgb(199, 199, 199) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  transition: opacity 200ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo:hover {
+  opacity: .7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tile {
+  transition: scale 200ms !important;
 }
 
-.App-link {
-  color: #61dafb;
+.tile:hover {
+  box-shadow: 0 0 18px 0 var(--hover-color) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tile:focus {
+  box-shadow: 0 0 18px 0 var(--hover-color) !important;
+}
+
+.tile:active {
+  scale: .9;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0 0% 0% / .7);
+  position: absolute;
+  z-index: 100;
+  display: grid;
+  place-content: center;
+}
+
+.modal {
+  display: grid;
+  width: 50vw;
+  height: 50vw;
+  background-color: var(--bgc);
+  border-radius: 30px;
+  place-content: center;
+  color: var(--text-color)
+}
+
+.modal p {
+  font-size: 2rem;
+}
+
+.modal button {
+  --s: 70%;
+  --l: 56%;
+  border: 0;
+  border-bottom: 2px solid hsl(var(--hue), var(--s), 30%);
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: hsl(var(--hue), var(--s), var(--l));
+  color: var(--text-color);
+   /* background-color: hsl(60, 68%, 56%); */
+  cursor: pointer;
+}
+
+.modal button:hover {
+  --s: 90%;
 }
