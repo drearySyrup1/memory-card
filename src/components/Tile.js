@@ -28,7 +28,7 @@ function Tile(props) {
         boxShadow: darkTheme
           ? "0 0 10px 0 hsl(0 0% 100% / .6)"
           : "0 0 10px 0 hsl(0 0% 0% / .25)",
-        width: "min-content",
+        width: "200px",
         padding: "2.5rem",
         borderRadius: "10px",
         display: "grid",
@@ -42,8 +42,8 @@ function Tile(props) {
       <div
         style={{
           borderRadius: "20px",
-          width: "120px",
-          height: "120px",
+          width: "100%",
+          height: "100%",
           overflow: "hidden",
         }}
       >

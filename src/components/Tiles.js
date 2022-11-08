@@ -33,8 +33,6 @@ const getLevelTiles = (tileAmount, remainingTiles) => {
   return tilesForLevel;
 };
 
-let clickedTiles = [];
-
 function Tiles(props) {
   const remainingTiles = useMemo(
     () => [...characterData],
@@ -45,8 +43,6 @@ function Tiles(props) {
     () => [],
     [props.level, props.reset]
   );
-
-  const isMounted = useRef(false);
 
   const tileAmount = useMemo(
     () => getTileAmount(props.level),

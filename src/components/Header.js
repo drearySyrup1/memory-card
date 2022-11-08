@@ -14,7 +14,9 @@ function Header(props) {
         backgroundColor: darkTheme ? "#171613" : "#b7a73e",
         padding: "4rem",
         display: "grid",
-        gridTemplateColumns: "repeat(3, 1fr)",
+        gridTemplateColumns: "auto 1fr auto",
+        columnGap: "20px",
+        alignItems: "center",
       }}
     >
       <Logo />

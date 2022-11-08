@@ -6,7 +6,7 @@ const commonFontStyles = {
 
 function Scores(props) {
   return (
-    <div>
+    <div className="scores">
       <p
         style={{
           fontSize: "3rem",

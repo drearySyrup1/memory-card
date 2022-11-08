@@ -67,3 +67,20 @@
 .modal button:hover {
   --s: 90%;
 }
+
+.scores p {
+  width: max-content;
+}
+
+@media (max-width: 804px) {
+  .logo img {
+    width: 22vw;
+  }
+  .header * {
+    font-size: 1rem !important;
+  }
+  .header {
+    padding: 2rem !important;
+  }
+
+}
